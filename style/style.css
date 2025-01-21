@@ -105,6 +105,15 @@
 }
 /* navbar section end here */
 
+/* marquee code start here */
+marquee{
+    background: orange;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+}
+/* marquee code end here */
+
 
 /* mobile and tablet device responsive */
 @media screen and (max-width: 768px) {
