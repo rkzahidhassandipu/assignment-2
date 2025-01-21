@@ -114,6 +114,23 @@ marquee{
 }
 /* marquee code end here */
 
+/* banner section start here */
+.banner-header{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.banner-description{
+    font-size: var(--praimary-font);
+    margin: 1rem 0;
+}
+.banner-img > img{
+    width: 100%;
+}
+.btn-banner{
+    background-color: black;
+}
+/* banner section end here */
+
 
 /* mobile and tablet device responsive */
 @media screen and (max-width: 768px) {
