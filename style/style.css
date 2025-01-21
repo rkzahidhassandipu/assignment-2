@@ -1,0 +1,137 @@
+/* font family link here */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* reset code start here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", serif;
+}
+:root{
+    --praimary-color: #FEA301;
+    --white-color: #fff;
+    --skey-blue: #01ACFD;
+    --past-color: #05D4DF;
+    --blue-color: #5D58EF;
+    --praimary-font: 20px;
+}
+/* reset code end here */
+
+/* common code start here */
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.display-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cursor{
+    cursor: pointer;
+}
+.hidden-large{
+    display: none;
+}
+
+.text-color{
+    color: var(--praimary-color);
+}
+.skey-blue{
+    color: var(--skey-blue);
+}
+.past-color{
+    color: var(--past-color);
+}
+.hard-blue{
+    color: var(--blue-color);
+}
+.align-self{
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+.justify-self{
+    justify-self: right;
+}
+.section-space{
+    margin: 6rem 0;
+}
+.grid{
+    display: grid;
+}
+.bg-img{
+    background: url("/assets/bg.png") no-repeat;
+    background-size: cover;
+}
+.section-header{
+    text-align: center;
+    font-size: 2rem;
+}
+.grid-dirction{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+/* common code end here */
+
+/* navbar section start here */
+.border{
+    border-bottom: 1px solid var(--praimary-color);
+    margin-bottom: 1rem;
+}
+.navbar{
+    padding: 20px 0;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: var(--praimary-font);
+}
+.btn{
+    padding: 10px 30px;
+    background-color: var(--praimary-color);
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white-color);
+}
+/* navbar section end here */
+
+
+/* mobile and tablet device responsive */
+@media screen and (max-width: 768px) {
+    .hidden{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .grid-row{
+        grid-row: 2;
+    }
+    .banner,
+    .standard-card,
+    .footer-colume{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .justify-self{
+        justify-self: center;
+        text-align: center;
+    }
+    .grid-dirction{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    .grid-dirction-md{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+ }
